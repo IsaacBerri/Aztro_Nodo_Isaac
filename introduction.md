@@ -1,0 +1,1 @@
+Hola, soy Isaac Berrio y soy un apasionado por el software y la creaciond e soluciones, tengo 20 años y tengo ya un año y medio programando, mi objetivo para este año es parender mucho y tener salida laboral en este maravillozo mundo de la tecnologia
