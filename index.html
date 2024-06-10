@@ -1,12 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello World!!</h1>
-    <h2>Isaac Berrio</h2>
-</body>
+  </head>
+  <body>
+    <h1>Inscripcion</h1>
+    <form id="form">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Escribe tu nombre"
+          required
+        />
+        <label for="apellidos">Apellidos</label>
+        <input
+          type="text"
+          name="apellidos"
+          id="apellidos"
+          placeholder="Escribe tus apellidos"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Escribe tu email"
+          required
+        />
+        <label for="direccion">Direccion</label>
+        <input
+          type="text"
+          name="direccion"
+          id="direccion"
+          placeholder="Escribe tu direccion"
+        />
+        <label for="pais">Pais</label>
+        <select name="pais" id="pais" required>
+          <option value="">Ninguno</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Peru">Peru</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Venezuela">Venezuela</option>
+        </select>
+        <br />
+        <br />
+        <label for="departamento">Departamento</label>
+        <select name="departamento" id="departamento" required>
+          <option value="">Ninguno</option>
+          <optgroup label="Antioquia">
+            <option value="Medellin">Medellin</option>
+            <option value="Itagui">Itagui</option>
+            <option value="Envigado">Envigado</option>
+            <option value="Bello">Bello</option>
+            <option value="Abriaquima">Abriaquima</option>
+            <option value="Abejorral">Abejorral</option>
+          </optgroup>
+          <optgroup label="Atlantico">
+            <option value="Barranquilla">Barranquilla</option>
+            <option value="Malambo">Malambo</option>
+            <option value="Sabanagrande">Sabanagrande</option>
+            <option value="Palmar">Palmar</option>
+            <option value="Baranoa">Baranoa</option>
+            <option value="SanAntero">San Antero</option>
+          </optgroup>
+          <optgroup label="Bogota">
+            <option value="Bogota">Bogota</option>
+            <option value="Fontibon">Fontibon</option>
+            <option value="Engativá">Engativá</option>
+            <option value="Usaquen">Usaquen</option>
+            <option value="Chia">Chia</option>
+            <option value="Gachalá">Gachalá</option>
+          </optgroup>
+          <optgroup label="Bolivar">
+            <option value="Cartagena">Cartagena</option>
+            <option value="Tierralta">Tierralta</option>
+            <option value="Curupira">Curupira</option>
+            <option value="SanVicente">San Vicente</option>
+            <option value="ElCarmenDeViboral">El Carmen de Viboral</option>
+            <option value="ElGuamo">El Guamo</option>
+          </optgroup>
+          <optgroup label="Boyaca">
+            <option value="Tunja">Tunja</option>
+            <option value="SabanaDeTorres">Sabana de Torres</option>
+            <option value="Soria">Soria</option>
+            <option value="Sativanorte">Sativanorte</option>
+            <option value="Sativasur">Sativasur</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+          </optgroup>
+        </select>
+        <label for="numero">Numero de telefono</label>
+        <input
+          type="number"
+          name="numero"
+          id="numero"
+          placeholder="Escribe tu numero de telefono"
+        />
+
+        <label for="info">Informacion personal</label>
+        <textarea
+          name="info"
+          id="info"
+          maxlength="300"
+          cols="30"
+          rows="1"
+          placeholder="Escribe tu informacion personal"
+        ></textarea>
+      </fieldset>
+      <br />
+      <br />
+      <fieldset style="display: flex;">
+        <legend>Preferencias de inscripcion</legend>
+        <fieldset style="width: 33%;">
+            <legend>Carrera</legend>
+            <input type="checkbox" name="Jobs to be done" id="Jobs to be done">
+            <label for="Jobs to be done">Jobs to be done</label>
+            <br>
+            <input type="checkbox" name="Cloud Native" id="Cloud Native">
+            <label for="Cloud Native">Cloud Native</label>
+            <br>
+            <input type="checkbox" name="Frontend" id="Frontend">
+            <label for="Frontend">Frontend</label>
+            <br>
+            <input type="checkbox" name="Backend" id="Backend">
+            <label for="Backend">Backend</label>
+            <br>
+            <input type="checkbox" name="Fundamentas" id="Fundamentas">
+            <label for="Fundamentas">Fundamentas</label>
+            <br>
+            <input type="checkbox" name="Python" id="Python">
+            <label for="Python">Python</label>
+            <br>
+            <input type="checkbox" name="Marketing Digital" id="Marketing Digital">
+            <label for="Marketing Digital">Marketing Digital</label>
+        </fieldset>
+        <fieldset style="width: 33%; height: fit-content;">
+            <legend>Modalidad</legend>
+            <input type="radio" name="Si" id="Precencial">
+            <label for="Precencial">Precencial</label>
+            <input type="radio" name="Virtual" id="Virtual">
+            <label for="Virtual">Virtual</label>
+        </fieldset>
+        <fieldset style="width: 33%; height: fit-content;">
+            <legend>¿Estas trabajando?</legend>
+            <input type="radio" name="Si" id="Si">
+            <label for="Si">Si</label>
+            <input type="radio" name="No" id="No">
+            <label for="No">No</label>
+        </fieldset>
+      </fieldset>
+      <br>
+      <br>
+      <button type="submit">Enviar</button>
+      <button type="reset">Borrar</button>
+    </form>
+    <script src="main.js"></script>
+  </body>
 </html>
