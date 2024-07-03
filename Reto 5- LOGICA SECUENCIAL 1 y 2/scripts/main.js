@@ -1,6 +1,4 @@
-// const inputs = document.querySelectorAll(".sectionInputs__input");
-
-const form = document.querySelector(".form");
+const form = document.querySelector(".main__form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

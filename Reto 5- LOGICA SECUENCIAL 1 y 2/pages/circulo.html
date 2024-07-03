@@ -3,41 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/stryle.css">
     <title>Logica secuencial - Circulo</title>
 </head>
 <body>
     <nav class="nav">
+        <i class="fa-solid fa-calculator fa-2xl nav__icon"></i>
         <ul class="nav__ul">
-            <a href="../index.html"><li class="ul__li">Rectangulo</li></a>
-            <a href="#"><li class="ul__li">Circulo</li></a>
+          <li class="ul__li"><a href="../index.html">Rectangulo</a></li>
+          <li class="ul__li"><a href="#">Circulo</a></li>
         </ul>
     </nav>
-    <header>
+    <header class="header">
         <h1>Calcular Circulo</h1>
     </header>
-    <main>
-        <form class="form" name="circulo">
+    <main class="main">
+        <form class="main__form" name="circulo">
           <section class="form__sectionInputs">
-            <label for="radio">Radio:</label>
+            <div class="divInputs">
+              <label for="radio">Radio</label>
             <input
               type="number"
               id="radio"
               class="sectionInputs__input"
               required
             />
+            </div>
           </section>
   
-          <section class="sectionOutputs">
-            <label for="area">Area:</label>
+          <section class="form__sectionOutputs">
+            <div class="divInputs">
+              <label for="area">Area</label>
             <input type="number" id="area" readonly />
-  
-            <label for="perimetro">Perimetro:</label>
+            </div>
+            <div class="divInputs">
+              <label for="perimetro">Perimetro</label>
             <input type="number" id="perimetro" readonly />
+            </div>
           </section>
   
           <button class="btn__calcular" type="submit">Calcular</button>
         </form>
       </main>
-      <script src="../scripts/main.js"></script>
+      <script
+      src="https://kit.fontawesome.com/e6bb805873.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

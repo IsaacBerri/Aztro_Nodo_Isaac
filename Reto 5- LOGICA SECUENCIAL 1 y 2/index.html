@@ -3,52 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/stryle.css" />
     <title>Logica secuencial - Rectangulo</title>
   </head>
   <body>
     <nav class="nav">
+      <i class="fa-solid fa-calculator fa-2xl nav__icon"></i>
       <ul class="nav__ul">
-        <a href="#"><li class="ul__li">Rectangulo</li></a>
-        <a href="pages/circulo.html"><li class="ul__li">Circulo</li></a>
+        <li class="ul__li"><a href="#">Rectangulo</a></li>
+        <li class="ul__li"><a href="pages/circulo.html">Circulo</a></li>
       </ul>
     </nav>
-    <header>
+    <header class="header">
       <h1>Calcular Rectangulo</h1>
     </header>
-    <main>
-      <form class="form" name="rectangulo">
+    <main class="main">
+      <form class="main__form" name="rectangulo">
         <section class="form__sectionInputs">
-          <label for="base">Base:</label>
-          <input
-            type="number"
-            id="base"
-            class="sectionInputs__input"
-            required
-          />
+          <div class="divInputs">
+            <label for="base">Base</label>
+            <input
+              type="number"
+              id="base"
+              class="sectionInputs__input"
+              required
+            />
+          </div>
 
-          <label for="altura">Altura:</label>
-          <input
-            type="number"
-            id="altura"
-            class="sectionInputs__input"
-            required
-          />
+          <div class="divInputs">
+            <label for="altura">Altura</label>
+            <input
+              type="number"
+              id="altura"
+              class="sectionInputs__input"
+              required
+            />
+          </div>
         </section>
 
-        <section class="sectionOutputs">
-          <label for="area">Area:</label>
+        <section class="form__sectionOutputs">
+          <div class="divInputs">
+            <label for="area">Area:</label>
           <input type="number" id="area" readonly />
-
-          <label for="perimetro">Perimetro:</label>
+          </div>
+          <div class="divInputs">
+            <label for="perimetro">Perimetro:</label>
           <input type="number" id="perimetro" readonly />
-
-          <label for="diametro">Diametro:</label>
+          </div>
+          <div class="divInputs">
+            <label for="diametro">Diametro:</label>
           <input type="number" id="diametro" readonly />
+          </div>
         </section>
 
         <button class="btn__calcular" type="submit">Calcular</button>
       </form>
     </main>
+    <script
+      src="https://kit.fontawesome.com/e6bb805873.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
