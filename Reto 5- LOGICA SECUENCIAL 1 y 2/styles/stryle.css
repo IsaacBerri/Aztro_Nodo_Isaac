@@ -47,7 +47,7 @@
 }
 
 .main__form{
-    width: 600px;
+    width: auto;
     height: 100%;
     border: #27AE60 2px solid;
     border-radius: 20px;
@@ -69,6 +69,13 @@
     flex-direction: column;
 }
 
+.divInputs input{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: #27AE60 2px solid;
+}
+
 .form__sectionInputs label{
     margin-bottom: 5px;
 }
@@ -77,9 +84,22 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .form__sectionOutputs label{
     margin-bottom: 5px;
+}
+
+.btn__calcular{
+    padding: 10px;
+    border-radius: 20px;
+    border: #27AE60 2px solid;
+    cursor: pointer;
+}
+
+.btn__calcular:hover{
+    background-color: #27AE60;
+    color: white;
 }
 
