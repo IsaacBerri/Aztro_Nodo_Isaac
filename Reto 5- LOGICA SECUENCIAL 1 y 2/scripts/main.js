@@ -2,6 +2,8 @@ const form = document.querySelector(".main__form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  console.log(e.target[5].select);
+  console.log(e);
   if (e.target.name === "rectangulo") {
     calcularRectangulo(e);
   } else {
