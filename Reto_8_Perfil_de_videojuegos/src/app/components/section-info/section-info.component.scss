@@ -1,0 +1,12 @@
+.section-info{
+    height: 100vh;
+    background-color: #333333;
+    padding: 40px 0 0 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-info{
+       height: auto;
+       padding: 40px 0 30px 80px;
+    }
+}

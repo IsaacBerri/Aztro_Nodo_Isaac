@@ -1,0 +1,13 @@
+.containerSection {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+    .containerSection {
+        grid-template-columns: 1fr;
+    }
+}
+
+
